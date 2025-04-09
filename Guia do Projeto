@@ -1,0 +1,150 @@
+# Projeto Estruturas de Dados: Pilha, Fila e Merge
+
+Este projeto implementa e demonstra o uso de **Pilha**, **Fila** e a fusão dessas estruturas de dados em **Java**. As operações demonstradas incluem inserção, remoção, impressão e fusão de filas, tanto em listas encadeadas quanto em vetores.
+
+## Estrutura do Projeto
+
+O projeto possui os seguintes arquivos principais:
+
+- **Main.java**: Arquivo principal que contém a execução das atividades.
+- **Pilha.java**: Implementação da estrutura de dados **Pilha**.
+- **Fila.java**: Implementação da estrutura de dados **Fila**.
+- **MergeVetor.java**: Implementação de fusão de duas filas utilizando vetores.
+- **No.java**: Classe auxiliar que define os nós usados em **Pilha** e **Fila**.
+
+## Pré-requisitos
+
+Para executar o projeto, você precisa ter o **Java JDK 8** ou superior instalado em sua máquina. Caso ainda não tenha, você pode [baixar o JDK do site oficial](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html).
+
+## Como Executar o Projeto
+
+1. **Clone o repositório para sua máquina local**:
+    ```bash
+    git clone https://github.com/seu-usuario/seu-repositorio.git
+    cd seu-repositorio
+    ```
+
+2. **Compilar os arquivos**:
+    Abra o terminal no diretório do projeto e execute o seguinte comando para compilar os arquivos Java:
+    ```bash
+    javac *.java
+    ```
+
+3. **Executar o arquivo principal**:
+    Após a compilação, execute o arquivo `Main.java`:
+    ```bash
+    java Main
+    ```
+
+Isso executará a lógica do programa e exibirá os resultados das operações de **Pilha**, **Fila** e **Merge** no terminal.
+
+## Exemplos de Execução
+
+### Exemplo 1: Operações com Pilha
+
+Ao executar o código, o seguinte será impresso:
+
+"PILHA ABAIXO:
+
+Elemento A Elemento B Elemento C
+
+Elementos da pilha: Elemento C Elemento B Elemento A
+
+Removido: Elemento C Elementos da pilha: Elemento B Elemento A"
+
+**Explicação**:
+
+- A pilha começa com três elementos: "Elemento A", "Elemento B", e "Elemento C".
+- A operação de remoção retira o último elemento inserido, que é o "Elemento C", e a pilha é atualizada.
+
+---
+
+### Exemplo 2: Operações com Fila
+
+Quando você executar o código, a seguinte saída será exibida:
+
+"FILA ABAIXO:
+
+Fila: Elemento A Elemento B Elemento C
+
+Fila: Elemento B Elemento C"
+
+
+**Explicação**:
+
+- A fila começa com três elementos: "Elemento A", "Elemento B", e "Elemento C".
+- A operação de remoção retira o primeiro elemento inserido, que é o "Elemento A", e a fila é atualizada.
+
+---
+
+### Exemplo 3: Fusão de Duas Filas
+
+Ao executar a fusão das duas filas, o seguinte será exibido:
+
+"MERGE ABAIXO:
+
+Fila A antes da fusão: Fila: Elemento A Elemento C Elemento E
+
+Fila B antes da fusão: Fila: Elemento B Elemento D Elemento F
+
+Fila C: Elemento A Elemento B Elemento C Elemento D Elemento E Elemento F"
+
+
+**Explicação**:
+
+- Duas filas, **A** e **B**, são mescladas em uma terceira fila **C**, que mantém a ordem dos elementos de forma intercalada.
+- O resultado mostra a fila **C**, que contém todos os elementos das filas **A** e **B** em ordem combinada.
+
+---
+
+### Exemplo 4: Fusão de Vetores
+
+Ao mesclar dois vetores de inteiros, o código imprime o seguinte:
+
+"MERGE COM VETORES ABAIXO:
+
+Fila A: 1 3 5 7 Fila B: 2 4 6 8 Fila C: 1 2 3 4 5 6 7 8"
+
+**Explicação**:
+
+- Dois vetores **A** e **B** são mesclados em um novo vetor **C**, que mantém a ordem crescente dos elementos.
+
+## Estruturas de Dados Implementadas
+
+### Pilha
+
+A **Pilha** é uma estrutura de dados do tipo **LIFO** (Last In, First Out), onde o último elemento inserido é o primeiro a ser removido. A implementação é feita utilizando uma lista encadeada, onde cada nó aponta para o próximo.
+
+**Operações disponíveis**:
+
+- **inserir(String valor)**: Insere um elemento no topo da pilha.
+- **remover()**: Remove e retorna o elemento do topo da pilha.
+- **imprimir()**: Exibe os elementos da pilha do topo para a base.
+
+---
+
+### Fila
+
+A **Fila** é uma estrutura de dados do tipo **FIFO** (First In, First Out), onde o primeiro elemento inserido é o primeiro a ser removido. A implementação também é feita utilizando uma lista encadeada.
+
+**Operações disponíveis**:
+
+- **insere(String dado)**: Insere um elemento no final da fila.
+- **remove()**: Remove e retorna o primeiro elemento da fila.
+- **imprime()**: Exibe os elementos da fila, do início ao fim.
+
+---
+
+### Merge de Filas e Vetores
+
+O projeto também implementa a fusão (**merge**) de duas filas e dois vetores de forma ordenada.
+
+- **Merge de Filas**: Mescla duas filas, mantendo a ordem dos elementos, intercalando os elementos de ambas as filas.
+- **Merge de Vetores**: Mescla dois vetores ordenados, criando um novo vetor ordenado.
+
+## Considerações Finais
+
+Este projeto fornece uma implementação simples, mas eficaz, de duas das estruturas de dados fundamentais: **Pilha** e **Fila**, e ainda realiza operações de **merge** (fusão) tanto para filas quanto para vetores.
+
+As operações são eficientes e o código foi desenvolvido com o intuito de demonstrar os conceitos de estrutura de dados em **Java**.
+
